@@ -41,10 +41,10 @@ class Solution: #time complexity: O(Nlog(N)); Space complexity: O(N)
     #auxiliary function to LeetCode's enviroment.
     def reversePairs(self, nums: List[int]) -> int:
         res = self.reverse(nums)
-        return  res
+        return  res[1]
     
 #optional. Use it for testing
 arr =  ((input("Insert numbers separated by space: \n").split(" ")))
 arr =  [int(i) for i in arr ]
 sol = Solution().reversePairs(arr)
-print("Here's the maximum sum of a Subarray from the inserted array:", sol)
+print("Here's the count of inverse pairs:", sol)
