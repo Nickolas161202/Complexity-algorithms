@@ -40,11 +40,12 @@ class Solution: #time complexity: O(Nlog(N)); Space complexity: O(N)
     
     #auxiliary function to LeetCode's enviroment.
     def countSmaller(self, nums: List[int]) -> List:
+        n =  len(nums)
         res = list(map(lambda key: [key, 0, 0], nums))
-        for i in  range(len(nums)):
+        for i in  range(n):
             res[i][2] = i
         left = 0
-        right = len(nums) -1
+        right = n -1
         self.divide(res, left, right)
         for i in res:
               nums[i[2]] =  i[1]
