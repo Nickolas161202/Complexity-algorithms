@@ -20,8 +20,6 @@ class Solution:
     
         return max_area
                 
-#area =  altura_do_delimitador  * (distancia entre  left e right)
-
 arr = [1,8,6,2,5,4,8,3,7]
 
 Solution().maxArea(arr)
